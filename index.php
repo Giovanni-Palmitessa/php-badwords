@@ -1,5 +1,6 @@
 <?php 
     $word_to_censure = $_GET['word'];
+    $paragraph_original = $_GET['paragraph'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,6 @@
   </head>
   <body>
     <h1>Parola da censurare: <?= $word_to_censure; ?></h1>
-    <p>Paragrafo originale: <?= $_GET['paragraph']?></p>
+    <p>Paragrafo originale: <?= $paragraph_original; ?> ,di lunghezza: <?= strlen($paragraph_original) ?></p>
   </body>
 </html>
