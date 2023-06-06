@@ -8,5 +8,6 @@
   </head>
   <body>
     <h1>Parola da censurare: <?= $_GET['word']; ?></h1>
+    <p>Paragrafo originale: <?= $_GET['paragraph']?></p>
   </body>
 </html>
