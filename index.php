@@ -1,7 +1,3 @@
-<?php 
-    $word_to_censure = $_GET['word'];
-    $paragraph_original = $_GET['paragraph'];
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +7,19 @@
     <title>Bad Words</title>
   </head>
   <body>
-    <h1>Parola da censurare: <?= $word_to_censure; ?></h1>
-    <p>Paragrafo originale: <?= $paragraph_original; ?> ,di lunghezza: <?= strlen($paragraph_original) ?></p>
+    <form action="index.php">
+      <input
+        type="text"
+        name="word"
+        placeholder="Scrivi una parola da censurare..."
+      />
+      <textarea
+        name="paragraph"
+        placeholder="Scrivi un testo da censurare"
+        cols="30"
+        rows="1"
+      ></textarea>
+      <button>Censura</button>
+    </form>
   </body>
 </html>
