@@ -7,6 +7,6 @@
     <title>Bad Words</title>
   </head>
   <body>
-    
+    <h1>Parola da censurare: <?= $_GET['word'] ?></h1>
   </body>
 </html>
