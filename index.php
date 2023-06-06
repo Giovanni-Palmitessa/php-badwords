@@ -7,7 +7,7 @@
     <title>Bad Words</title>
   </head>
   <body>
-    <form action="index.php">
+    <form action="censure.php">
       <input
         type="text"
         name="word"
