@@ -1,9 +1,9 @@
 <?php 
-if (isset($_GET['word'])) {
-  $word_to_censure = isset($_GET['word']);
-} else {
-  $word_to_censure = '';
-}
+// if (isset($_GET['word'])) {
+//   $word_to_censure = isset($_GET['word']);
+// } else {
+//   $word_to_censure = '';
+// }
 
 $word_to_censure = isset($_GET['word']) ? $_GET['word'] : '';
 $paragraph_original = isset($_GET['paragraph']) ? $_GET['paragraph'] : '';
