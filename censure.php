@@ -1,6 +1,17 @@
 <?php 
-    $word_to_censure = $_GET['word'];
-    $paragraph_original = $_GET['paragraph'];
+if (isset($_GET['word'])) {
+  $word_to_censure = isset($_GET['word']);
+} else {
+  $word_to_censure = '';
+}
+
+$word_to_censure = isset($_GET['word']) ? $_GET['word'] : '';
+$paragraph_original = isset($_GET['paragraph']) ? $_GET['paragraph'] : '';
+// oppure
+// $paragraph_original = $_GET['paragraph'] ?? '';
+
+    // $word_to_censure = isset($_GET['word']);
+    // $paragraph_original = isset($_GET['paragraph']);
     $new_paragraph = str_replace($word_to_censure, '***', $paragraph_original)
 ?>
 <!DOCTYPE html>
